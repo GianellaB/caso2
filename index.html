@@ -1,213 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unlimited Web Hosting - CloudFlex</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web Hosting Page</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="images/favicon.png" type="image/png">
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
+</head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <nav class="navbar">
-            <div class="navbar-logo">
-                <h1><img src="logoo.png" alt="CloudFlex Logo">CloudFlex</h1>
-            </div>
-            <ul class="navbar-menu">
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#news">News</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="navbar-contact">
-                <span>Support</span>
-                <a href="tel:+13070913">+1 307 09 13</a>
-            </div>
-        </nav>
-    </header>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logoo.png" alt="Cloudflex logo">
+            <span>Cloudflex</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="contact-info">
+            <h3>Support</h3>
+            <i class="fas fa-phone"></i>
+            <span>+1 307 09 13</span>
+        </div>
+    </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
+    <section class="hero-section">
+        <div class="hero-text">
             <h1>Unlimited Web Hosting</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas purus viverra accumsan in nisl nisi.</p>
-            <div class="search-domain">
-                <input type="text" placeholder="Search your domain...">
-                <select>
-                    <option>.com</option>
-                    <option>.net</option>
-                    <option>.org</option>
-                    <option>.io</option>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas purus viverra accumsan in nisl nisi.</p>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Search your domain..." class="domain-search">
+                <select class="domain-select">
+                    <option value=".com">.com</option>
+                    <option value=".net">.net</option>
+                    <option value=".org">.org</option>
                 </select>
-                <a href="#" class="btn btn-primary">Start Free</a>
+                <button class="btn-start">Start Free</button>
             </div>
         </div>
         <div class="hero-image">
-            <img src="host.png" alt="Web Hosting">
+            <img src="host.png" alt="Cloud hosting illustration">
         </div>
     </section>
-
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <h2>Awesome Customer Services</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <div class="service-items">
-            <div class="service-item">
-                <img src="pa.png" alt="Scalable Root Storages" class="service-image">
-                <h3>Scalable Root Storages</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua egestas purus viverra accumsan.</p>
-                <a href="#" class="btn btn-read-more">Read More </a>
-            </div>
-            <div class="service-item">
-                <img src="root1.png" alt="Fast Technology Speed" class="service-image">
-                <h3>Fast Technology Speed</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua egestas purus viverra accumsan.</p>
-                <a href="#" class="btn btn-read-more">Read More </a>
-            </div>
-            <div class="service-item">
-                <img src="unlimited.png" alt="Unlimited Traffic" class="service-image">
-                <h3>Unlimited Traffic</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua egestas purus viverra accumsan.</p>
-                <a href="#" class="btn btn-read-more">Read More </a>
-            </div>
+    <!-- Servicios Generales -->
+<section id="services" class="services">
+    <h2>Awesome Customer Services</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <div class="service-items">
+        <div class="service-item service-item-1">
+            <img src="pa.png" alt="Scalable Root Storages" class="service-image">
+            <h3>Scalable Root Storages</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua egestas purus viverra accumsan.</p>
+            <a href="#" class="btn btn-read-more">Read More</a>
         </div>
-    </section>
+        <div class="service-item service-item-2">
+            <img src="root1.png" alt="Fast Technology Speed" class="service-image">
+            <h3>Fast Technology Speed</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua egestas purus viverra accumsan.</p>
+            <a href="#" class="btn btn-read-more">Read More</a>
+        </div>
+        <div class="service-item service-item-3">
+            <img src="unlimited.png" alt="Unlimited Traffic" class="service-image">
+            <h3>Unlimited Traffic</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua egestas purus viverra accumsan.</p>
+            <a href="#" class="btn btn-read-more">Read More</a>
+        </div>
+    </div>
+</section>
 
     <!-- Pricing Section -->
-    <section id="pricing" class="pricing">
-        <h2>Quality Doesn't Have to Be Low Price</h2>
-        <div class="pricing-tables">
-            <div class="pricing-table">
-                <h3>Starter Plan</h3>
-                <p class="price">$35.99</p>
-                <ul>
-                    <li>1 TB Disk Space</li>
-                    <li>10 Email Addresses</li>
-                    <li>24/7 Support</li>
-                </ul>
-                <a href="#" class="btn btn-secondary">Get Started</a>
+    <section class="pricing-section">
+        <div class="header">
+            <p class="highlight">Lorem ipsum dolor sit amet disciplinated</p>
+                <h1>Quality doesn’t have a low Price</h1>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
-            <div class="pricing-table highlighted">
-                <h3>Pro Business</h3>
-                <p class="price">$78.99</p>
-                <ul>
-                    <li>Unlimited Disk Space</li>
-                    <li>50 Email Addresses</li>
-                    <li>24/7 Support</li>
-                </ul>
-                <a href="#" class="btn btn-primary">Get Started</a>
+    
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-bolt"></i>
+                    <p>Fastest Web Servers</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-code"></i>
+                    <p>Open Source</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-cube"></i>
+                    <p>Compact Hub</p>
+                </div>
+                <div class="feature active">
+                    <i class="fas fa-award"></i>
+                    <p>Best CS in 2020</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-envelope"></i>
+                    <p>Unlimited Mail Servers</p>
+                </div>
             </div>
-            <div class="pricing-table">
-                <h3>Enterprise VIP</h3>
-                <p class="price">$135.99</p>
-                <ul>
-                    <li>Unlimited Disk Space</li>
-                    <li>100 Email Addresses</li>
-                    <li>24/7 VIP Support</li>
-                </ul>
-                <a href="#" class="btn btn-secondary">Get Started</a>
+    
+            <div class="plans">
+                <div class="plan">
+                    <h2>Starter Plan</h2>
+                    <h3>$35.99</h3>
+                    <p>Per Month</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Unlimited back-end bandwidth</li>
+                        <li><i class="fas fa-check"></i> Unlimited inbound data transfer</li>
+                        <li><i class="fas fa-check"></i> Global deployment</li>
+                        <li><i class="fas fa-check"></i> On-demand provisioning</li>
+                        <li><i class="fas fa-check"></i> Flexible bandwidth packages</li>
+                        <li><i class="fas fa-check"></i> Extensive customization</li>
+                        <li><i class="fas fa-check"></i> 24/7 support</li>
+                    </ul>
+                    <button class="btn">Get Started</button>
+                </div>
+    
+                <div class="plan featured">
+                    <h2>Pro Business</h2>
+                    <h3>$78.99</h3>
+                    <p>Per Month</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Unlimited back-end bandwidth</li>
+                        <li><i class="fas fa-check"></i> Unlimited inbound data transfer</li>
+                        <li><i class="fas fa-check"></i> Global deployment</li>
+                        <li><i class="fas fa-check"></i> On-demand provisioning</li>
+                        <li><i class="fas fa-check"></i> Flexible bandwidth packages</li>
+                        <li><i class="fas fa-check"></i> Extensive customization</li>
+                        <li><i class="fas fa-check"></i> 24/7 support</li>
+                    </ul>
+                    <button class="btn">Get Started</button>
+                </div>
+    
+                <div class="plan">
+                    <h2>Enterprise VIP</h2>
+                    <h3>$135.99</h3>
+                    <p>Per Month</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Unlimited back-end bandwidth</li>
+                        <li><i class="fas fa-check"></i> Unlimited inbound data transfer</li>
+                        <li><i class="fas fa-check"></i> Global deployment</li>
+                        <li><i class="fas fa-check"></i> On-demand provisioning</li>
+                        <li><i class="fas fa-check"></i> Flexible bandwidth packages</li>
+                        <li><i class="fas fa-check"></i> Extensive customization</li>
+                        <li><i class="fas fa-check"></i> 24/7 support</li>
+                    </ul>
+                    <button class="btn">Get Started</button>
+                </div>
             </div>
+    
+            <div class="footer">
+                <p>2,488 Businesses</p>
+            </div>
+        </section>
+
+        <div class="container">
+            <section class="services">
+                <h2>Nuestros Servicios</h2>
+                <p>Descubre los servicios que ofrecemos para satisfacer tus necesidades.</p>
+                <div class="service-items">
+<!-- Primer Servicio -->
+<div class="service-item detailed-service">
+    <div class="service-content">
+        <div class="service-text">
+            <h3>So Flucking Easy for Deployment</h3>
+            <h1>Designed For Scale & Performance</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas purus viverra accumsan in nisl nisi. Arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque. In egestas erat imperdiet sed euismod nisi porta lorem mollis.</p>
+            <a href="#" class="btn-get-started">Get started →</a>
+        </div>
+        <div class="service-image">
+            <img src="img1.png" alt="Servicio 2">
+        </div>
+    </div>
+</div>                                                   
+
+<!-- Segundo Servicio -->
+<div class="service-item detailed-service">
+    <div class="service-content">
+        <div class="service-image">
+            <img src="img2.png" alt="Servicio 1">
+        </div>
+        <div class="service-text">
+            <h3>So Flucking Easy for Deployment</h3>
+            <h1>Quick & Easy Deployment</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas purus viverra accumsan in nisl nisi. Arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque. In egestas erat imperdiet sed euismod nisi porta lorem mollis.</p>
+            <a href="#" class="btn-get-started">Get started →</a>
+        </div>
+    </div>
+</div>
+
+
+                    <!-- Agrega más servicios aquí si es necesario -->
+                </div>
+            </section>
+            
+<!-- Reviews Section -->
+
+
+
+    <!-- Map Section -->
+    <section id="map" class="map">
+        <h2>Our Global Reach</h2>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233668.6035918774!2d-118.69193094411428!3d34.02016106106659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c29de8b9e8f1%3A0x9b930d57b7b2f2f4!2sLos%20Angeles%2C%20CA%2C%20USA!5e0!3m2!1sen!2sin!4v1694250934597!5m2!1sen!2sin" 
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </div>
     </section>
 
-    <!-- Reviews Section -->
-    <section id="reviews" class="reviews">
-        <h2>Our Best Clients Review</h2>
-        <div class="review-items">
-            <div class="review-item">
-                <img src="gratitude_12605939.png" alt="Client 1">
-                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit.”</p>
-                <span>- Client 1</span>
-            </div>
-            <div class="review-item">
-                <img src="joy.png" alt="Client 2">
-                <p>“Egestas purus viverra accumsan in nisl nisi. Egestas purus.”</p>
-                <span>- Client 2</span>
-            </div>
-        </div>
-    </section>
-
-    <!-- Subscribe Section -->
-    <section id="subscribe" class="subscribe">
-        <h2>Subscribe to Our Newsletter</h2>
-        <p>Stay updated with the latest news and special offers.</p>
-        <form id="subscribe-form">
-            <input type="email" id="email" placeholder="Enter your email" required>
-            <button type="submit" class="btn btn-primary">Subscribe</button>
-        </form>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="contact-info">
-            <h3>We’re Powering over 25 Million Websites Worldwide</h3>
+        <!-- Subscribe Section -->
+     
+        <section id="subscribe" class="subscribe">
+            <h2>We’re Powering over 25 Million Websites Worldwide</h2>
             <p>Join our community of satisfied customers and start your journey today with our unbeatable hosting solutions.</p>
-            <a href="#get-started" class="btn btn-primary">Start Free</a>
-        </div>
-    </section>
 
-    <!-- Footer Section -->
-
-     <footer>
-        <div class="footer-content">
-            <div class="footer-left">
-                <div class="logo">
-                    <h1><img src="logoo.png" alt="CloudFlex Logo">CloudFlex </h1>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas purus viverra accumsan in nisl nisi. Auctor elit nunc congue mauris rhoncus aenean vel elit scelerisque in egestas erat imperdiet.</p>
-                <div class="newsletter">
-                    <h4>NEWSLETTER</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                    <form id="subscribe-form">
-                        <input type="email" id="email" placeholder="Enter your email..." required>
-                        <button type="submit">Subscribe</button>
-                    </form>
-                </div>
-            </div>
-            <div class="footer-right">
-                <div class="footer-links">
-                    <div class="footer-columns">
-                        <h4>INTERNAL PAGES</h4>
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">FAQ</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-columns">
-                        <h4>PARTNERS</h4>
-                        <ul>
-                            <li><a href="#">Bosco Inc</a></li>
-                            <li><a href="#">Mento</a></li>
-                            <li><a href="#">Pollich</a></li>
-                            <li><a href="#">Runolffodottir</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Social Links -->
-        <div class="footer-social">
-            <ul class="social-links">
-                <li><a href="#" aria-label="Facebook"><img src="facebook.png" alt="Facebook"></a></li>
-                <li><a href="#" aria-label="WhatsApp"><img src="whatsapp.png" alt="WhatsApp"></a></li>
-                <li><a href="#" aria-label="YouTube"><img src="youtube.png" alt="YouTube"></a></li>
-            </ul>
-        </div>
-        <div class="footer-credits">
-            <p>&copy; 2024 CloudFlex. All rights reserved.</p>
-        </div>
-    </footer>
+                <a href="#" class="btn-get-started">Stard For Free →</a>
+    
+            </form>
+        </section>
     
 
-    <script src="scripts.js"></script>
-</body>
+<!-- Footer Section -->
+<footer>
+    <div class="footer-content">
+        <div class="footer-left">
+            <div class="logo">
+                <h1><img src="logoo.png" alt="CloudFlex Logo">CloudFlex </h1>
+                <div class="footer-social">
+                    <ul class="social-links">
+                        <li><a href="#"><img src="facebook.png" alt="Facebook"></a></li>
+                        <li><a href="#"><img src="whatsapp.png" alt="WhatsApp"></a></li>
+                        <li><a href="#"><img src="youtube.png" alt="YouTube"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas purus viverra accumsan in nisl nisi. Auctor elit nunc congue mauris rhoncus aenean vel elit scelerisque in egestas erat imperdiet.</p>
+            <div class="newsletter">
+                <h4>NEWSLETTER</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                <form id="subscribe-form">
+                    <input type="email" id="email" placeholder="Enter your email..." required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-right">
+            <div class="footer-links">
+                <div class="footer-columns">
+                    <h4>INTERNAL PAGES</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-columns">
+                    <h4>PARTNERS</h4>
+                    <ul>
+                        <li><a href="#">Bosco Inc</a></li>
+                        <li><a href="#">Mento</a></li>
+                        <li><a href="#">Pollich</a></li>
+                        <li><a href="#">Runolffodottir</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 
-</html>
+
+    <script src="script.js"></script>
+    </body>
+    </html>
+    
