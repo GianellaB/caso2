@@ -1,4 +1,4 @@
-/* Estilos Generales */
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -6,176 +6,134 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #F0F1F6;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* Contenedor Principal */
-.container {
-    width: 100%;
-    max-width: none; /* Elimina el ancho máximo para usar el ancho completo del contenedor */
-    padding: 0; /* Elimina el relleno */
-    margin: 0; /* Elimina los márgenes */
+    font-family: 'Poppins', sans-serif;
+    background-color: #03142f;
+    color: white;
+    line-height: 1.6;
 }
 
 
-/* Navbar */
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00d1a0;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+}
+
+p {
+    font-weight: 400;
+}
+
+/* Navbar Styles */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: #0e1933;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
+    padding: 1rem 2rem;
+    background-color: #02102b00;
 }
 
 .logo {
     display: flex;
     align-items: center;
-    color: #fff;
-    font-size: 24px;
-    font-weight: bold;
 }
 
 .logo img {
+    height: 30px;
     margin-right: 10px;
 }
 
+
+
 .nav-links {
-    display: flex;
     list-style: none;
+    display: flex;
 }
 
 .nav-links li {
-    margin: 0 20px; /* Ajusta el espacio entre los enlaces */
+    margin: 0 1rem;
 }
 
-.nav-links a {
-    color: #fff;
-    text-decoration: none;
+.nav-links li a {
+    font-weight: 600;
     font-size: 16px;
 }
 
-.nav-links a:hover {
-    color: #14D9C1;
-}
-
 .contact-info {
-    display: flex;
-    align-items: center;
-    color: #fff;
-}
-
-.contact-info i {
-    margin-right: 10px;
-    font-size: 18px;
+    font-size: 14px;
+    text-align: right;
 }
 
 
 /* Hero Section */
-.hero-section {
+.hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 100px 220px 50px;
-    background-color: #0e1933;
-    margin-top: 70px;
-    color: #fff;
+    padding: 50px;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
 }
 
-.hero-text {
-    max-width: 600px;
+.hero .content {
+    max-width: 50%;
 }
 
-.hero-text h1 {
-    font-size: 70px;
-    margin-bottom: 5px;
+.hero h1 {
+    font-size: 5em;
 }
 
-.hero-text h2 {
-    font-size: 40px;
-    margin-bottom: 20px;
+.hero h2 {
+    font-size: 4em;
 }
 
-.hero-text p {
-    font-size: 18px;
-    margin-bottom: 40px;
-    line-height: 1.6;
-    color: rgba(255, 255, 255, 0.8);
+.hero p {
+    margin: 20px 0;
 }
 
 .search-bar {
     display: flex;
-    align-items: center;
-    background-color: #1B2142;
+    gap: 10px;
+}
+
+.search-bar input, .search-bar select, .search-bar button {
     padding: 10px;
     border-radius: 5px;
-}
-
-.domain-search {
-    width: 250px;
-    padding: 10px;
     border: none;
-    outline: none;
-    background-color: #09083200;
-    color: #ffffff;
 }
 
-.domain-select {
-    margin-left: 10px;
-    padding: 10px;
-    border: none;
-    background-color: #0c102400;
-    color: #fff;
-    cursor: pointer;
+.search-bar button {
+    background-color: #00d1a0;
+    color: #111B2E;
 }
 
-.btn-start {
-    margin-left: 130px; /* Ajusta el espacio del botón */
-    padding: 10px 20px;
-    background-color: #00ff95;
-    border: none;
-    color: #000c3d;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 15px;
-}
+/* Features Section */
 
-.btn-start:hover {
-    background-color: #0051ff;
-}
 
-/* Hero Image */
-.hero-image img {
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-}
 
-/* Servicios Generales */
+
+
 .services {
     text-align: center;
     padding: 80px 20px;
-    background: #f9f9f9;
+
 }
 
 .services h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #333;
+    color: #ffffff;
 }
 
 .services p {
     font-size: 1.1rem;
-    color: #777;
+    color: #a9a9a9;
     margin-bottom: 40px;
 }
 
@@ -183,11 +141,11 @@ body {
     display: flex;
     justify-content: space-around;
     gap: 20px;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Los servicios se ajustan en pantallas pequeñas */
 }
 
 .general-service-item {
-    background: #fff;
+    background: #061836;
     padding: 20px;
     border-radius: 8px;
     text-align: center;
@@ -203,60 +161,187 @@ body {
 }
 
 .general-service-item img {
-    max-width: 100%;
+    max-width: 80%;
     margin-bottom: 10px;
 }
 
-/* Botón Generales */
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    color: #fff;
-    background-color: #007bff;
-    border: none;
-    border-radius: 5px;
+/* Pricing Section */
+.pricing-section {
     text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.btn:hover {
-    background-color: #0056b3;
+.header .highlight {
+    color: #00d1a0;
+    margin-bottom: 10px;
+    font-size: 14px;
 }
 
-/* Botón "Read More" */
-.btn-read-more {
-    display: inline-block;
-    position: relative;
-    padding-bottom: 5px;
-    text-decoration: none;
-    color: #333;
-    font-size: 16px;
-    font-weight: bold;
+.header h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
 }
 
-.btn-read-more::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #007bff;
-    transition: background-color 0.3s ease;
-}
-
-.btn-read-more:hover::after {
-    background-color: #0056b3;
-}
-
-/* Servicios Detallados */
-.detailed-service {
+.header .description {
+    color: rgba(255, 255, 255, 0.7);
     margin-bottom: 50px;
 }
 
+.features {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.feature {
+    text-align: center;
+}
+
+.feature i {
+    font-size: 30px;
+    color: #fff;
+}
+
+.feature.active i {
+    color: #00d1a0;
+}
+
+.feature p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.plans {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.plan {
+    background-color: #fff;
+    border-radius: 10px;
+    color: #240c0c;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+    width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+    max-width: 300px; /* Limita el ancho en pantallas más grandes */
+
+    
+}
+
+.plan:hover {
+    transform: translateY(-10px);
+}
+
+.featured {
+    background-color: #3C6CE7;
+    color: #fff;
+}
+
+.plan h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.plan h3 {
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+.plan p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.plan ul {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.plan ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.plan ul li i {
+    color: #00d1a0;
+    margin-right: 10px;
+}
+
+.btn {
+    background-color: #3C6CE7;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #2A4DA8;
+}
+
+.footer {
+    margin-top: 20px;
+}
+
+.footer p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+}
+/*servicios*/
+.detailed-service {
+    background-color: white; /* Establece el color de fondo a blanco */
+    padding: 40px 0; /* Espaciado superior e inferior */
+}
+
+.cta-section {
+    background-color: white; /* Si quieres que esta sección también tenga fondo blanco */
+    padding: 40px 0; /* Espaciado superior e inferior */
+}
+
+.footer {
+    background-color: #f8f9fa; /* Cambia el color de fondo del pie de página si es necesario */
+}
+
+.powering-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 16px; /* Reducción del padding */
+    font-size: 14px; /* Reducción del tamaño de la fuente */
+    color: #01d28e; /* Color de texto original */
+    background-color: #0a1e3b; /* Color de fondo original */
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 20px;
+    border-radius: 25px; /* Aumento del border-radius para más redondez */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Cambia el color al pasar el mouse */
+.powering-button:hover {
+    background-color: #01d28e; /* Color de fondo jade */
+    color: #fff; /* Cambia el color del texto si lo deseas */
+}
+
+/* Cambia el color al hacer clic */
+.powering-button:active {
+    background-color: #009473; /* Un tono jade más oscuro */
+    color: #fff; /* Cambia el color del texto si lo deseas */
+}
+
+
+
+
 .service-content {
+    background-color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -270,7 +355,7 @@ body {
 
 .service-text h3 {
     font-size: 0.8rem;
-    color: #00ff95;
+    color: #00d1a0;
 }
 
 .service-text h1 {
@@ -304,7 +389,6 @@ body {
     height: auto;
     display: block;
 }
-
 /* Alternar imagen y texto */
 .detailed-service:nth-of-type(odd) .service-content {
     flex-direction: row;
@@ -313,164 +397,44 @@ body {
 .detailed-service:nth-of-type(even) .service-content {
     flex-direction: row-reverse;
 }
-
-/* Responsividad */
-@media (max-width: 768px) {
-    .service-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .service-image img {
-        width: 80%;
-        margin: 0 auto;
-    }
-}
-
-/* Pricing Section */
-.pricing-section {
+/* Map Section */
+.map {
+    background-color: #f9f9f9; /* Color de fondo de la sección del mapa */
+    padding: 50px 20px; /* Espaciado interno para la sección del mapa */
     text-align: center;
-    width: 100%;
-    max-width: 1200px;
-    margin: 100px auto;
+    color: #000000 /* Centra el texto dentro de la sección */
 }
 
-.header {
-    text-align: center;
-    margin-bottom: 20px;
+.map-content {
+    max-width: 1200px; /* Ancho máximo del contenedor del contenido del mapa */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
 }
 
-.header h1 {
-    font-size: 46px;
-    margin-bottom: 15px;
+.map-content h3, .map-content h2, .map-content p {
+    margin-bottom: 20px; /* Espacio debajo de los encabezados y párrafos */
 }
 
-.header .description {
-    color: rgba(112, 111, 111, 0.7);
+.map-container {
+    position: relative; /* Establece la posición relativa para el contenedor del mapa */
+    overflow: hidden; /* Oculta el contenido que se desborda del contenedor */
+    padding-top: 56.25%; /* Mantiene el ratio de aspecto 16:9 (56.25% = 9 / 16 * 100) */
+    margin: 0 auto; /* Centra el contenedor del mapa horizontalmente */
+    max-width: 100%; /* Asegura que el contenedor no exceda el ancho del contenedor padre */
 }
 
-.features {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
+.map-container iframe {
+    position: absolute; /* Posiciona el iframe absolutamente dentro del contenedor */
+    top: 0; /* Ajusta la posición superior */
+    left: 0; /* Ajusta la posición izquierda */
+    width: 100%; /* Asegura que el iframe ocupe todo el ancho del contenedor */
+    height: 100%; /* Asegura que el iframe ocupe toda la altura del contenedor */
+    border: 0; /* Elimina el borde del iframe */
 }
-
-.feature {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 100px;
-    box-shadow: 0 10px 60px rgba(0, 0, 0, 0.1);
-    flex: 1;
-    max-width: 2200px; /* Ajusta el tamaño máximo de la tarjeta */
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.feature:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-}
-
-.feature i {
-    font-size: 3rem;
-    color: #007bff;
-    margin-bottom: 10px;
-}
-
-.feature h3 {
-    font-size: 1.5rem;
-    margin: 10px 0;
-}
-
-.feature p {
-    font-size: 1rem;
-    color: #666;
-}
-
-
-.plans {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-bottom: 50px;
-}
-
-.plan {
-    background-color: #ffffff;
-    border-radius: 10px;
-    color: #003366; /* Color azul oscuro */
-    width: 300px;
-    padding: 20px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.375);
-    transition: transform 0.3s ease-in-out;
-}
-
-.plan:hover {
-    transform: translateY(-10px);
-}
-
-.featured {
-    background-color: #0080ff; /* Color azul oscuro MEDIO  */
-    color: #fff;
-}
-
-.plan h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.plan h3 {
-    font-size: 36px;
-    margin-bottom: 5px;
-}
-
-.plan p {
-    font-size: 16px;
-    margin-bottom: 20px;
-}
-
-.plan ul {
-    list-style: none;
-    text-align: left;
-    margin-bottom: 20px;
-}
-
-.plan ul li {
-    margin-bottom: 10px;
-    font-size: 14px;
-}
-
-.plan ul li i {
-    color: #14D9C1;
-    margin-right: 10px;
-}
-
-.btn {
-    background-color: #b9ddff; /* Color azul oscuro */
-    border: none;
-    color: #000000c0;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #00ffc3; /* Un tono más oscuro de azul */
-}
-
 /* Estilos Generales */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f9f9f9;
-    margin: 0;
-    padding: 0;
-}
+
 
 .cta-section {
-    background-color: #1a1a2e;
+    background-color: #0c2044be;
     border-radius: 20px;
     margin: 2rem auto;
     max-width: 800px;
@@ -483,6 +447,7 @@ body {
 
 .cta-content {
     padding: 1rem;
+    
 }
 
 .cta-tag {
@@ -517,308 +482,190 @@ body {
 }
 
 .cta-button:hover {
-    background-color: #00997d;
+    background-color: #00d1a0;
 }
 
-/* General Styles for Map Section */
-.map {
-    text-align: center; /* Centra el texto dentro de la sección */
-    padding: 50px 20px; /* Añade espacio interno en la parte superior e inferior y en los lados */
-    background-color: #f9f9f9; /* Color de fondo de la sección del mapa */
-}
-
-.map h3, .map h2, .map p {
-    margin: 0 auto; /* Centra los elementos y les da margen automático */
-    max-width: 800px; /* Limita el ancho de los elementos para mejorar la legibilidad */
-}
-
-/* Styles specifically for headings and paragraphs */
-.map h3 {
-    font-size: 1.5em; /* Tamaño de fuente del encabezado h3 */
-    margin-bottom: 20px; /* Espacio debajo del encabezado h3 */
-    color: #333; /* Color del texto */
-}
-
-.map h2 {
-    font-size: 2em; /* Tamaño de fuente del encabezado h2 */
-    margin-bottom: 20px; /* Espacio debajo del encabezado h2 */
-    color: #111; /* Color del texto */
-}
-
-.map p {
-    font-size: 1em; /* Tamaño de fuente del párrafo */
-    line-height: 1.6; /* Altura de línea para mejorar la legibilidad */
-    color: #666; /* Color del texto */
-}
-
-/* Map Section */
-.map {
-    background-color: #f9f9f9; /* Color de fondo de la sección del mapa */
-    padding: 50px 20px; /* Espaciado interno para la sección del mapa */
-    text-align: center; /* Centra el texto dentro de la sección */
-}
-
-.map-content {
-    max-width: 1200px; /* Ancho máximo del contenedor del contenido del mapa */
-    margin: 0 auto; /* Centra el contenedor horizontalmente */
-}
-
-.map-content h3, .map-content h2, .map-content p {
-    margin-bottom: 20px; /* Espacio debajo de los encabezados y párrafos */
-}
-
-.map-container {
-    position: relative; /* Establece la posición relativa para el contenedor del mapa */
-    overflow: hidden; /* Oculta el contenido que se desborda del contenedor */
-    padding-top: 56.25%; /* Mantiene el ratio de aspecto 16:9 (56.25% = 9 / 16 * 100) */
-    margin: 0 auto; /* Centra el contenedor del mapa horizontalmente */
-    max-width: 100%; /* Asegura que el contenedor no exceda el ancho del contenedor padre */
-}
-
-.map-container iframe {
-    position: absolute; /* Posiciona el iframe absolutamente dentro del contenedor */
-    top: 0; /* Ajusta la posición superior */
-    left: 0; /* Ajusta la posición izquierda */
-    width: 100%; /* Asegura que el iframe ocupe todo el ancho del contenedor */
-    height: 100%; /* Asegura que el iframe ocupe toda la altura del contenedor */
-    border: 0; /* Elimina el borde del iframe */
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .map-container {
-        padding-top: 75%; /* Ajusta el ratio de aspecto para pantallas más pequeñas */
-    }
-}
+/* Footer */
 
 
-
-/* Estilo general del pie de página */
-
-
-.footer-container {
-    display: flex; /* Usa flexbox para alinear los elementos en una fila */
-    justify-content: space-between; /* Espaciado uniforme entre los elementos */
-    align-items: flex-start; /* Alinea los elementos al principio del contenedor */
-    gap: 20px; /* Espacio entre los elementos */
-}
-
-.footer-left, .footer-right {
-    flex: 1; /* Permite que las columnas ocupen el mismo espacio */
-}
-
-.footer-logo {
-    display: flex; /* Usa flexbox para alinear el logo y el texto */
-    align-items: center; /* Alinea verticalmente el logo y el texto */
-}
-
-.footer-logo img {
-    width: 50px; /* Tamaño del logo */
-    margin-right: 10px; /* Espacio entre el logo y el texto */
-}
-
-.footer-description {
-    margin-top: 20px; /* Espacio encima del párrafo */
-    margin-bottom: 20px; /* Espacio debajo del párrafo */
-}
-
-.footer-social {
-    display: flex; /* Usa flexbox para alinear los íconos en una fila */
-    gap: 10px; /* Espacio entre los íconos */
-}
-
-.footer-social a img {
-    width: 24px; /* Tamaño de los íconos de redes sociales */
-    vertical-align: middle; /* Alinea verticalmente los íconos */
-}
-
-/* Estilo de las columnas en la parte derecha */
-.footer-right {
-    display: flex; /* Usa flexbox para alinear las columnas */
-    justify-content: space-between; /* Espaciado uniforme entre las columnas */
-}
-
-.footer-column {
-    flex: 1; /* Permite que las columnas ocupen el mismo espacio */
-    margin-right: 20px; /* Espacio a la derecha de cada columna */
-}
-
-.footer-column:last-child {
-    margin-right: 0; /* Elimina el margen derecho de la última columna */
-}
-
-.footer-newsletter {
-    flex: 1; /* Permite que el bloque de newsletter ocupe el mismo espacio */
-    margin-: 20px; /* Espacio a la izquierda del bloque de newsletter */
-}
-
-.footer-newsletter h3 {
-    margin-top: 0; /* Elimina el margen superior */
-    margin-bottom: 10px; /* Espacio debajo del título */
-}
-
-.footer-newsletter p {
-    margin-bottom: 15px; /* Espacio debajo del párrafo */
-}
-
-.footer-newsletter form {
-    display: flex; /* Usa flexbox para alinear el campo y el botón */
-    gap: 10px; /* Espacio entre el campo de entrada y el botón */
-}
-
-.footer-newsletter input {
-    flex: 1; /* El campo de entrada ocupa el espacio disponible */
-    padding: 10px; /* Padding interno */
-    border: 1px solid #ccc; /* Borde del campo de entrada */
-    border-radius: 5px; /* Bordes redondeados del campo de entrada */
-}
-
-.footer-newsletter button {
-    padding: 10px 20px; /* Padding interno del botón */
-    border: none; /* Elimina el borde del botón */
-    border-radius: 5px; /* Bordes redondeados del botón */
-    background-color: #007bff; /* Color de fondo del botón */
-    color: #fff; /* Color del texto del botón */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-}
-
-.footer-newsletter button:hover {
-    background-color: #0056b3; /* Fondo azul más oscuro al pasar el cursor */
-}
-
-/* Estilo del pie de página inferior */
-.footer-bottom {
-    text-align: center; /* Centra el texto en el pie de página inferior */
-    margin-top: 20px; /* Espacio encima del pie de página inferior */
-}
-
-
-/* Estilo del pie de página */
 .footer {
-    background-color: #0e1933; /* Color de fondo del pie de página */
-    color: white; /* Color del texto */
-    padding: 2rem 0; /* Espacio alrededor del pie de página */
+    background-color: #03142f;
+    padding: 50px;
 }
 
 .footer-container {
-    max-width: 12000px; /* Ancho máximo del contenedor */
-    margin: 0 auto; /* Centra el contenedor horizontalmente */
-    display: flex; /* Usa flexbox para alinear elementos */
-    justify-content: space-between; /* Espacio uniforme entre elementos */
-    padding: 0 2rem; /* Espacio interno en los lados */
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan si es necesario */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer-left {
-    flex: 1; /* Permite que el bloque ocupe el espacio restante */
-    padding-left: 2rem; /* Espacio a la derecha del bloque */
+    max-width: 40%;
 }
 
-.footer-logo {
-    display: flex; /* Usa flexbox para alinear el logo, el texto y los íconos */
-    align-items: center; /* Alinea verticalmente el contenido */
-    gap: 10px; /* Espacio entre el logo, el texto y los íconos */
-    margin-bottom: 1rem; /* Espacio debajo del logo */
+.logo-social {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
-.footer-logo img {
-    height: 30px; /* Tamaño del logo */
-    width: 50px; /* Tamaño del logo */
+
+
+.logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00d1a0;
 }
 
-.footer-social {
-    display: flex; /* Usa flexbox para alinear los íconos de redes sociales en una fila */
-    gap: 10px; /* Espacio entre los íconos */
+.social-icons i {
+    color: #fff;
+    margin-left: 10px;
+    font-size: 18px;
 }
 
-.footer-social a img {
-    height: 24px; /* Tamaño de los íconos de redes sociales */
-    width: 24px; /* Tamaño de los íconos de redes sociales */
+.social-icons i:hover {
+    color: #00d1a0;
 }
 
-/* Estilo de la parte derecha del pie de página */
+.footer-left p {
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+.newsletter {
+    margin-top: 40px;
+}
+
+.newsletter h2 {
+    color: #00d1a0;
+    margin-bottom: 10px;
+}
+
+.newsletter form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.newsletter input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background-color: #00d1a0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: #00d1a0;
+}
+
 .footer-right {
-    flex: 2; /* Permite que el bloque ocupe más espacio que la parte izquierda */
-    display: flex; /* Usa flexbox para alinear las columnas */
-    justify-content: space-between; /* Espacio uniforme entre las columnas */
-    flex-wrap: wrap; /* Permite que las columnas se envuelvan si es necesario */
+    max-width: 55%;
 }
 
-/* Estilo de las columnas */
-.footer-links {
-    display: flex; /* Usa flexbox para alinear las columnas */
-    gap: 2rem; /* Espacio entre las columnas */
-}
-
-/* Estilo de las columnas individuales */
-.footer-column {
-    flex: 1; /* Permite que las columnas ocupen el mismo espacio */
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer-column h3 {
-    font-size: 1rem; /* Tamaño de fuente del título de las columnas */
-    margin-bottom: 1rem; /* Espacio debajo del título de las columnas */
+    color: #00d1a0;
+    margin-bottom: 10px;
 }
 
 .footer-column ul {
-    list-style: none; /* Elimina los puntos de la lista */
-    padding: 0; /* Elimina el padding de la lista */
+    list-style: none;
 }
 
 .footer-column ul li {
-    margin-bottom: 0.5rem; /* Espacio debajo de cada elemento de la lista */
+    margin-bottom: 10px;
 }
 
 .footer-column ul li a {
-    color: white; /* Color del texto de los enlaces */
-    text-decoration: none; /* Elimina el subrayado de los enlaces */
-    font-size: 0.9rem; /* Tamaño de fuente de los enlaces */
+    color: #fff;
+    text-decoration: none;
 }
 
-/* Estilo del bloque de newsletter */
-.footer-newsletter {
-    max-width: 300px; /* Ancho máximo del bloque de newsletter */
-    margin-top: 1rem; /* Espacio encima del bloque de newsletter */
+.footer-column ul li a:hover {
+    color: #00d1a0;
 }
 
-.footer-newsletter h3 {
-    margin-top: 0; /* Elimina el margen superior */
-    margin-bottom: 10px; /* Espacio debajo del título */
+.footer-bottom p{
+    padding: 20px;
+    text-align: center;
+}
+/* Para pantallas pequeñas como móviles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: 3em;
+    }
+
+    .hero h2 {
+        font-size: 2em;
+    }
+
+    .services {
+        padding: 40px 20px;
+    }
+
+    .service-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing-section .plans {
+        flex-direction: column;
+    }
+
+    .plan {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
 
-.footer-newsletter p {
-    margin-bottom: 15px; /* Espacio debajo del párrafo */
-}
+/* Para tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .hero h1 {
+        font-size: 4em;
+    }
 
-.footer-newsletter form {
-    display: flex; /* Usa flexbox para alinear el campo de entrada y el botón */
-    gap: 10px; /* Espacio entre el campo de entrada y el botón */
-}
+    .hero h2 {
+        font-size: 3em;
+    }
 
-.footer-newsletter input {
-    flex: 1; /* El campo de entrada ocupa el espacio disponible */
-    padding: 0.5rem; /* Espacio interno del campo de entrada */
-    margin-right: 10px; /* Espacio a la derecha del campo de entrada */
-    border-radius: 5px; /* Bordes redondeados del campo de entrada */
-    border: none; /* Elimina el borde del campo de entrada */
-}
+    .services {
+        padding: 60px 20px;
+    }
 
-.footer-newsletter button {
-    padding: 0.5rem 1rem; /* Espacio interno del botón */
-    background-color: #00d1a0; /* Color de fondo del botón */
-    color: white; /* Color del texto del botón */
-    border: none; /* Elimina el borde del botón */
-    border-radius: 5px; /* Bordes redondeados del botón */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-}
+    .service-items {
+        flex-wrap: wrap;
+    }
 
-.footer-newsletter button:hover {
-    background-color: #0056b3; /* Fondo azul más oscuro al pasar el cursor */
-}
+    .pricing-section .plans {
+        flex-direction: column;
+    }
 
-/* Estilo del pie de página inferior */
-.footer-bottom {
-    text-align: center; /* Centra el texto en el pie de página inferior */
-    margin-top: 1rem; /* Espacio encima del pie de página inferior */
-    font-size: 0.8rem; /* Tamaño de fuente del pie de página inferior */
+    .plan {
+        width: 80%;
+        margin-bottom: 20px;
+    }
 }
